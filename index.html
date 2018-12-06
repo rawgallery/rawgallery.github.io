@@ -1,117 +1,183 @@
 <!DOCTYPE html>
 <html>
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,h1,h2{font-family: "Raleway", sans-serif}
-    body, html {height: 100%}
-    p {line-height: 2}
-    .bgimg, .bgimg2 {
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-color: darkolivegreen
-    }
-    .bgimg {background-image: url("conductoricon.png")}
-    .bgimg2 {background-image: url("/w3images/flowers.jpg")}
-  </style>
-  <body>
-
-    <!-- Header / Home-->
-    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-      <div class="w3-display-middle w3-text-black w3-center">
-        <h1 class="w3-jumbo" style="color:#ffffff;">RAW__GALLERY</h1>
-        <h2 style="color: #ffffff;">Online Portfolio</h2>
-        <h8 style="color: #ffffff;"><b>2018 - </b></h8>
-      </div>
-    </header>
-
-    <!-- Navbar (sticky bottom) -->
-    <div class="w3-bottom w3-hide-small">
-      <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-        <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-        <a href="#fineart" style="width:25%" class="w3-bar-item w3-button">Fine Art</a>
-        <a href="#graphicart" style="width:25%" class="w3-bar-item w3-button">Graphic Art</a>
-        <a href="#uxui" style="width:25%" class="w3-bar-item w3-button w3-hover-black">UX | UI</a>
-      </div>
-    </div>
-
-    <!-- FINE ART -->
-    <div class="w3-container w3-padding-64 w3-lightgray w3-grayscale-min" id="us">
-      <div class="w3-content">
-        <h1 class="w3-center w3-text-grey"><b>FINE ART</b></h1>
-        <img class="w3-round w3-grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
-        <p class="w3-center"><i>Now on Display.</i>
-        </p><br>
-        <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Commission Application</a></p>
-      </div>
-    </div>
-
-    <!-- Background photo -->
-    <div class="w3-display-container bgimg2">
-      <div class="w3-display-middle w3-text-white w3-center">
-        <h1 class="w3-jumbo">Follow Us</h1><br>
-        <h8>Instagram: @raw__gallery</h8>
-      </div>
-    </div>
-
-    <!-- Wedding information -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
-      <div class="w3-content">
-        <h1 class="w3-text-grey"><b>PROJECTS</b></h1>
-        <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
-        <div class="w3-row">
-          <div class="w3-half">
-            <p>Golden State Warriors</p>
-            <p>Google, Inc.</p>
-          </div>
-          <div class="w3-half">
-            <p>Oakland, CA</p>
-            <p>Sunnyvale, CA</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RSVP section -->
-    <div class="w3-container w3-padding-64 w3-center w3-wide" id="rsvp">
-      <h1>INQUIRE</h1>
-      <p class="w3-large">User Experience x User Interface Design</p>
-      <p class="w3-xlarge">
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Contact</button>
-      </p>
-    </div>
-
-    <!-- RSVP modal -->
-    <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-        <div class="w3-container w3-white w3-center">
-          <h1 class="w3-wide">CAN YOU COME?</h1>
-          <p>We really hope you can make it.</p>
-          <form>
-            <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-          </form>
-          <p><i>Sincerely, John & Jane</i></p>
-          <div class="w3-row">
-            <div class="w3-half">
-              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1440px, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/cPHome.css" rel="stylesheet" type="text/css"/>
+        <meta content="Launchpad by Anima" name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 255, 255, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="cphome"/>
+        <form action="none" class="cphome" method="post" name="none">
+            <div style="width: 1440px; height: 100%; position:relative; margin:auto;">
+                <div class="coreprojectteam">
+                    Core Project Team
+                </div>
+                <img anima-src="./img/cphome-path@2x.png" class="path" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                <div class="teamhome">
+                    Team Home
+                </div>
+                <a href="cncontactus.html">
+                    <div class="contactsupport">
+                        Contact Support
+                    </div>
+                </a>
+                <a href="cpwwasaying.html">
+                    <div class="whatweu2019resaying">
+                        What We’re Saying
+                    </div>
+                </a>
+                <a href="cpwtah.html">
+                    <div class="whenthingsarehapp">
+                        When Things Are<br />     Happening
+                    </div>
+                </a>
+                <a href="cpqf.html">
+                    <div class="questionsfeedback">
+                        Questions + Feedback
+                    </div>
+                </a>
+                <img anima-src="./img/cp-wwasaying-line 1@2x.png" class="line" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                <img anima-src="./img/lthome-line 1@2x.png" class="line1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                <div class="rectangle">
+                </div>
+                <a href="cppmo.html">
+                    <div class="programupdates">
+                        Program Updates
+                    </div>
+                </a>
+                <a href="announcements.html">
+                    <div class="announcements">
+                        Announcements
+                    </div>
+                </a>
+                <a href="cptimeline.html">
+                    <div class="orchestratimeline">
+                        Orchestra Timeline
+                    </div>
+                </a>
+                <a href="cpmoreonorchestra.html">
+                    <div class="moreonorchestra">
+                        More on Orchestra
+                    </div>
+                </a>
+                <a href="cncontactus.html">
+                    <div class="contactus">
+                        Contact Us
+                    </div>
+                </a>
+                <a href="cnfaq.html">
+                    <div class="faq">
+                        FAQ
+                    </div>
+                </a>
+                <a href="cplibrary.html">
+                    <div class="meetingmaterials">
+                        Meeting Materials
+                    </div>
+                </a>
+                <a href="cpteamupdates.html">
+                    <div class="teamupdates">
+                        Team Updates
+                    </div>
+                </a>
+                <a href="cphome.html">
+                    <img anima-src="./img/cp-wwasaying-bitmap.png" class="bitmap" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                </a>
+                <a href="cphome.html">
+                    <img anima-src="./img/cp-pmo-bitmap@2x.png" class="bitmap1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                </a>
+                <a href="homev1.html">
+                    <div class="orchestrahome">
+                        Orchestra Home
+                    </div>
+                </a>
+                <a href="announcements.html">
+                    <div class="announcements1">
+                        Announcements
+                    </div>
+                </a>
             </div>
-            <div class="w3-half">
-              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
-    <div class="w3-hide-small" style="margin-bottom:32px"> </div>
-
-  </body>
+        </form>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
 </html>
